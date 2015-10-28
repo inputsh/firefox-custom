@@ -5,3 +5,6 @@ Just a simple web page that I'm using as the default new tab page in Firefox on 
 You can see it live by visiting [r3bl.me/firefox-custom](https://r3bl.me/firefox-custom).
 
 ## Screenshot
+
+![firefox custom new tab page screenshot](https://r3bl.me/firefox-custom/images/screenshot.png)
+
