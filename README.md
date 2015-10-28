@@ -6,5 +6,5 @@ You can see it live by visiting [r3bl.me/firefox-custom](https://r3bl.me/firefox
 
 ## Screenshot
 
-![firefox custom new tab page screenshot](https://r3bl.me/firefox-custom/images/screenshot.png)
+![firefox custom new tab page screenshot](https://raw.githubusercontent.com/aleksandar-todorovic/firefox-custom/gh-pages/images/screenshot.png)
 
