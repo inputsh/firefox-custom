@@ -18,16 +18,66 @@
     <![endif]-->
   </head>
   <body style="background-color:2f343f">
+      <script type="text/javascript">
+      function browserDetect() {
+          var icon = "";
+          var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+          var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+          var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+          var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+          var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
 
-      <div class="container" style="width:80%; padding-top: 50px;">
+          if (isOpera === true) {
+              icon = '<i class="fa fa-5x fa-opera" style="color:2f343f"></i>';
+          } else if (isChrome === true) {
+              icon = '<i class="fa fa-5x fa-chrome" style="color:2f343f"></i>';
+          } else if (isSafari === true) {
+              icon = '<i class="fa fa-5x fa-safari" style="color:2f343f"></i>';
+          } else if (isFirefox === true) {
+              icon = '<i class="fa fa-5x fa-firefox" style="color:2f343f"></i>';
+          } else if (isIE === true) {
+              icon = '<i class="fa fa-5x fa-internet-explorer" style="color:2f343f"></i>';
+          } else {
+              icon = '<i class="fa fa-5x fa-cloud" style="color:2f343f"></i>';
+          }
+          document.write(icon);
+      }
+      </script>
+
+      <script type="text/javascript">
+      function browserQuote() {
+          var quote = "";
+          var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+          var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+          var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+          var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+          var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
+
+          if (isOpera === true) {
+              quote = "Opera browser is everything you need to do more on the web.";
+          } else if (isChrome === true) {
+              quote = "The fast, free browser that's built for the modern web.";
+          } else if (isSafari === true) {
+              quote = "The best way to see the sites.";
+          } else if (isFirefox === true) {
+              quote = "When it's personal, choose Firefox.";
+          } else if (isIE === true) {
+              quote = "Internet Explorer? Really? Who the hell still uses that?";
+          } else {
+              quote = "I don't know which browser you're using, so here's a nice icon of the cloud.";
+          }
+          document.write(quote);
+        }
+        </script>
+      <div class="container" style="width:80%; padding-top: 40px;">
 
           <div class="jumbotron">
               <div class="row">
                   <div class="col-md-3 col-md-offset-3 col-sm-12 text-center" style="font-size:30px">
-                      <i class="fa fa-5x fa-firefox" style="color:2f343f"></i>
+                      <script type="text/javascript">browserDetect()</script>
                   </div>
-                  <div class="col-md-3 col-sm-12 text-center">
-                      <br/><br/><p style="color:2f343f" class="text-center">When it's personal, choose Firefox.</p>
+                  <div class="col-md-3 col-sm-12 text-center hidden-xs hidden-sm">
+                      <br/><br/><p style="color:2f343f" class="text-center"><script type="text/javascript">browserQuote()</script></p>
                   </div>
 
               </div>
@@ -61,22 +111,22 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-4 col-xs-12" >
-                            <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                            <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                                 <a href="https://opensource.com/"><p style="color:2f343f" class="text-center col-xs-12 col-md-3">Opensource.com</p></a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-12" >
-                            <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                            <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                                 <a href="https://news.ycombinator.com/"><p style="color:2f343f" class="text-center">Hacker News</p></a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-12" >
-                            <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                            <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                                 <a href="https://www.reddit.com/"><p style="color:2f343f" class="text-center">reddit</p></a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-12">
-                            <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                            <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                                 <a href="https://getpocket.com/a/queue/list/"><p style="color:2f343f" class="text-center">Pocket</p></a>
                             </div>
                         </div>
@@ -86,12 +136,12 @@
                 <div class="container">
                   <div class="row">
                       <div class="col-md-3 col-sm-4 col-xs-12" >
-                          <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                          <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                               <a href="https://r3bl.me"><p style="color:2f343f" class="text-center">Website</p></a>
                           </div>
                       </div>
                       <div class="col-md-3 col-sm-4 col-xs-12" >
-                          <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                          <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                               <a href="https://blog.r3bl.me"><p style="color:2f343f" class="text-center">Blog</p></a>
                           </div>
                       </div>
@@ -101,7 +151,7 @@
                           </div>
                       </div>
                       <div class="col-md-3 col-sm-4 col-xs-12">
-                          <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                          <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                               <a href="https://github.com/aleksandar-todorovic/notes"><p style="color:2f343f" class="text-center">Notes</p></a>
                           </div>
                       </div>
@@ -111,7 +161,7 @@
               <div class="container">
                   <div class="row">
                       <div class="col-md-3 col-sm-4 col-xs-12">
-                          <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                          <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                               <a href="https://www.goodreads.com/"><p style="color:2f343f" class="text-center">GoodReads</p></a>
                           </div>
                       </div>
@@ -121,12 +171,12 @@
                           </div>
                       </div>
                       <div class="col-md-3 col-sm-4 col-xs-12">
-                          <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                          <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                               <a href="https://www.hackerrank.com/"><p style="color:2f343f" class="text-center">HackerRank</p></a>
                           </div>
                       </div>
                       <div class="col-md-3 col-sm-4 col-xs-12">
-                          <div style="height:7%; width:100%; font-size:25px;" class="text-center">
+                          <div style="height:6%; width:100%; font-size:25px;" class="text-center">
                               <a href="https://www.cybrary.it/"><p style="color:2f343f" class="text-center">Cybrary</p></a>
                           </div>
                       </div>
@@ -139,5 +189,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./js/bootstrap.min.js"></script>
+
   </body>
 </html>
